@@ -226,11 +226,30 @@ figure {
   color: var(--description-color);
   margin-bottom: 4px;
 }
+.form-icon-box {
+  position: relative;
+}
+.user-icon {
+  position: absolute;
+  top: 13.26px;
+  left: 14.27px;
+}
+.phone-icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+.mail-icon {
+  position: absolute;
+  top: 14px;
+  left: 13.5px;
+}
 .ordering-form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
   margin-bottom: 10px;
+  padding-left: 42px;
 }
 .form-box textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
