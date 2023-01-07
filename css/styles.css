@@ -194,7 +194,7 @@ figure {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modal-window button {
+.exit-button {
   width: 30px;
   height: 30px;
   border-radius: 50%;

@@ -63,11 +63,37 @@
             <!-- MODAL WINDOW -->
             <div class="backdrop is-hidden" data-modal>
               <div class="modal-window">
-                <button type="button" data-modal-close>
+                <button class="exit-button" type="button" data-modal-close>
                   <svg width="18px" height="18px">
                     <use href="images/icons.svg#closing-icon-1"></use>
                   </svg>
                 </button>
+                <p>Zostaw swoje dane w formularzu poniżej</p>
+                <form name="order-the-service">
+                  <label for="user-name">Imię</label>
+                  <input id="user-name" name="user-name" required />
+                  <label for="phone-number">Telefon</label>
+                  <input id="phone-number" name="phone-number" type="tel" />
+                  <label for="email">E-mail</label>
+                  <input id="email" name="email" type="email" />
+                  <label for="comment">Komentarz</label>
+                  <textarea
+                    id="comment"
+                    name="comment"
+                    placeholder="Wprowadź tekst"
+                    rows="8"
+                  ></textarea>
+                  <input
+                    id="regulations-and-privacy-policy"
+                    type="checkbox"
+                    name="regulations-and-privacy-policy"
+                    value="accepted"
+                  />
+                  <label for="regulations-and-privacy-policy"
+                    >Oświadczam, iż akceptuję Regulamin i Politykę Prywatności.</label
+                  >
+                  <button class="main-button" type="submit">Wyślij</button>
+                </form>
               </div>
             </div>
             <!-- MODAL WINDOW END -->
