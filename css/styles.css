@@ -408,6 +408,13 @@ figure {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-input:hover,
+.footer-input:focus,
+.footer-input:active {
+  border-color: var(--selection-color);
+  outline: 0;
+  background: none;
+}
 .footer-button {
   display: flex;
   align-items: center;
