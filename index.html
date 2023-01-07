@@ -90,21 +90,23 @@
                   <label for="comment">Komentarz</label>
                   <textarea id="comment" name="comment" placeholder="Wprowadź tekst"></textarea>
                   <div class="checkbox-container">
-                    <svg class="checkbox-input-icon" width="16px" height="15px">
-                      <use href="images/noweikony.svg#icon-checkbox"></use>
-                    </svg>
-                    <svg class="checkbox-input-checked" width="16px" height="15px">
-                      <use href="images/noweikony.svg#icon-check-symbol"></use>
-                    </svg>
-                    <input
-                      id="regulations-and-privacy-policy"
-                      type="checkbox"
-                      name="regulations-and-privacy-policy"
-                      value="accepted"
-                    />
-                    <label for="regulations-and-privacy-policy"
-                      >Oświadczam, iż akceptuję <a href="#">Regulamin</a> i
-                      <a href="#">Politykę Prywatności</a>.</label
+                    <label>
+                      <input
+                        class="checkbox-input"
+                        type="checkbox"
+                        name="regulations-and-privacy-policy"
+                        value="accepted"
+                      />
+                      <svg class="accepted-terms" width="16px" height="15px">
+                        <use href="images/noweikony.svg#icon-check-symbol"></use>
+                      </svg>
+                      <svg class="not-accepted-terms" width="16px" height="15px">
+                        <use href="images/noweikony.svg#icon-checkbox"></use>
+                      </svg>
+                      <span
+                        >Oświadczam, iż akceptuję <a href="#">Regulamin</a> i
+                        <a href="#">Politykę Prywatności</a>.</span
+                      ></label
                     >
                   </div>
                   <button class="main-button" type="submit">Wyślij</button>
