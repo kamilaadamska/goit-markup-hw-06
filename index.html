@@ -69,13 +69,24 @@
                   </svg>
                 </button>
                 <p>Zostaw swoje dane w formularzu poniżej</p>
-                <form name="order-the-service">
+                <form name="order-the-service" class="form-box">
                   <label for="user-name">Imię</label>
-                  <input id="user-name" name="user-name" required />
+                  <input id="user-name" name="user-name" class="ordering-form-input" required />
                   <label for="phone-number">Telefon</label>
-                  <input id="phone-number" name="phone-number" type="tel" />
+                  <input
+                    id="phone-number"
+                    name="phone-number"
+                    type="tel"
+                    class="ordering-form-input"
+                  />
                   <label for="email">E-mail</label>
-                  <input id="email" name="email" type="email" />
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    class="ordering-form-input"
+                  />
                   <label for="comment">Komentarz</label>
                   <textarea
                     id="comment"
@@ -90,7 +101,8 @@
                     value="accepted"
                   />
                   <label for="regulations-and-privacy-policy"
-                    >Oświadczam, iż akceptuję Regulamin i Politykę Prywatności.</label
+                    >Oświadczam, iż akceptuję <a href="#">Regulamin</a> i
+                    <a href="#">Politykę Prywatności.</a></label
                   >
                   <button class="main-button" type="submit">Wyślij</button>
                 </form>
