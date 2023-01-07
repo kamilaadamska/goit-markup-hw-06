@@ -248,11 +248,20 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 8px;
   margin-bottom: 30px;
 }
 .checkbox-container input {
   appearance: none;
+}
+.checkbox-input-icon {
+  margin-bottom: 4px;
+}
+.checkbox-input-checked {
+  fill: var(--brand-color-white);
+  background-color: var(--selection-color);
+  border-radius: 2px;
+  margin-bottom: 4px;
 }
 .checkbox-container label {
   font-size: 14px;
