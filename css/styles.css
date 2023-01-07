@@ -185,7 +185,6 @@ figure {
 .modal-window {
   position: absolute;
   width: 528px;
-  height: 581px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -195,9 +194,31 @@ figure {
   border-radius: 4px;
   padding: 40px;
 }
+.exit-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 .form-box {
   display: flex;
   flex-direction: column;
+}
+.form-header {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  margin-bottom: 12px;
 }
 .form-box label {
   font-size: 12px;
@@ -216,24 +237,18 @@ figure {
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
+  margin-bottom: 20px;
 }
 .form-box textarea::placeholder {
   font-size: 12px;
   color: rgba(117, 117, 117, 0.5);
 }
-.exit-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
-  position: absolute;
-  top: 8px;
-  right: 8px;
+.checkbox-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  gap: 5px;
+  margin-bottom: 30px;
 }
 /* What we do */
 .what-we-do-list {

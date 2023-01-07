@@ -68,7 +68,7 @@
                     <use href="images/icons.svg#closing-icon-1"></use>
                   </svg>
                 </button>
-                <p>Zostaw swoje dane w formularzu poniżej</p>
+                <p class="form-header">Zostaw swoje dane w formularzu poniżej</p>
                 <form name="order-the-service" class="form-box">
                   <label for="user-name">Imię</label>
                   <input id="user-name" name="user-name" class="ordering-form-input" required />
@@ -94,16 +94,18 @@
                     placeholder="Wprowadź tekst"
                     rows="8"
                   ></textarea>
-                  <input
-                    id="regulations-and-privacy-policy"
-                    type="checkbox"
-                    name="regulations-and-privacy-policy"
-                    value="accepted"
-                  />
-                  <label for="regulations-and-privacy-policy"
-                    >Oświadczam, iż akceptuję <a href="#">Regulamin</a> i
-                    <a href="#">Politykę Prywatności.</a></label
-                  >
+                  <div class="checkbox-container">
+                    <input
+                      id="regulations-and-privacy-policy"
+                      type="checkbox"
+                      name="regulations-and-privacy-policy"
+                      value="accepted"
+                    />
+                    <label for="regulations-and-privacy-policy"
+                      >Oświadczam, iż akceptuję <a href="#">Regulamin</a> i
+                      <a href="#">Politykę Prywatności.</a></label
+                    >
+                  </div>
                   <button class="main-button" type="submit">Wyślij</button>
                 </form>
               </div>
