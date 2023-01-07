@@ -405,8 +405,17 @@
         <div>
           <form name="newsletter-subscribe">
             <label class="footer-element-header" for="user-email">Zapisz się do newslettera</label>
-            <input type="email" id="user-email" name="user-email" placeholder="E-mail" />
-            <button type="submit">Zapisz się</button>
+            <div class="newsletter-form-elements">
+              <input
+                class="footer-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="E-mail"
+                required
+              />
+              <button class="main-button" type="submit">Zapisz się</button>
+            </div>
           </form>
         </div>
       </div>
