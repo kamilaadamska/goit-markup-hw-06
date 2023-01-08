@@ -72,28 +72,25 @@
                 <form name="order-the-service" class="form-box">
                   <label for="user-name">Imię </label>
                   <div class="form-icon-box">
+                    <input id="user-name" name="user-name" class="ordering-form-input" required />
                     <svg class="user-icon" width="12px" height="12px">
                       <use href="images/noweikony.svg#icon-user"></use>
                     </svg>
-                    <input id="user-name" name="user-name" class="ordering-form-input" required />
                   </div>
                   <label for="phone-number">Telefon</label>
                   <div class="form-icon-box">
-                    <svg class="phone-icon" width="13px" height="13px">
-                      <use href="images/noweikony.svg#icon-phone"></use>
-                    </svg>
                     <input
                       id="phone-number"
                       name="phone-number"
                       type="tel"
                       class="ordering-form-input"
                     />
+                    <svg class="phone-icon" width="13px" height="13px">
+                      <use href="images/noweikony.svg#icon-phone"></use>
+                    </svg>
                   </div>
                   <label for="email">E-mail</label>
                   <div class="form-icon-box">
-                    <svg class="mail-icon" width="15px" height="12px">
-                      <use href="images/noweikony.svg#icon-mail"></use>
-                    </svg>
                     <input
                       id="email"
                       name="email"
@@ -101,6 +98,9 @@
                       required
                       class="ordering-form-input"
                     />
+                    <svg class="mail-icon" width="15px" height="12px">
+                      <use href="images/noweikony.svg#icon-mail"></use>
+                    </svg>
                   </div>
                   <label for="comment">Komentarz</label>
                   <textarea id="comment" name="comment" placeholder="Wprowadź tekst"></textarea>

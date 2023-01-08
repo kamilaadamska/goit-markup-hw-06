@@ -233,16 +233,19 @@ figure {
   position: absolute;
   top: 13.26px;
   left: 14.27px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-icon {
   position: absolute;
   top: 14px;
   left: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-icon {
   position: absolute;
   top: 14px;
   left: 13.5px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ordering-form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -251,6 +254,17 @@ figure {
   width: 100%;
   margin-bottom: 10px;
   padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ordering-form-input:focus,
+.form-box textarea:focus {
+  outline: 0;
+  border-color: var(--selection-color);
+}
+.ordering-form-input:focus + .mail-icon,
+.ordering-form-input:focus + .phone-icon,
+.ordering-form-input:focus + .user-icon {
+  fill: var(--selection-color);
 }
 .form-box textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -259,6 +273,7 @@ figure {
   height: 120px;
   resize: none;
   margin-bottom: 20px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-box textarea::placeholder {
   font-size: 12px;
