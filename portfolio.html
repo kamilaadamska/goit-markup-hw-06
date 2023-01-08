@@ -292,7 +292,7 @@
                 >
               </li>
               <li>
-                <a class="footer-address footer-contact-details" href="mailto:info@example.com"
+                <a class="link footer-address footer-contact-details" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
@@ -305,7 +305,7 @@
           </address>
         </div>
         <div>
-          <span class="footer-sm-header">Dołącz do nas</span>
+          <span class="footer-element-header">Dołącz do nas</span>
           <ul class="footer-social-media">
             <li class="social-media-icon footer-icon-color">
               <svg width="20px" height="20px">
@@ -328,6 +328,27 @@
               </svg>
             </li>
           </ul>
+        </div>
+        <div>
+          <form name="newsletter-subscribe">
+            <label class="footer-element-header" for="user-email">Zapisz się do newslettera</label>
+            <div class="newsletter-form-elements">
+              <input
+                class="footer-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="E-mail"
+                required
+              />
+              <button class="main-button footer-button" type="submit">
+                <span>Zapisz się</span>
+                <svg width="24px" height="24px">
+                  <use href="images/noweikony.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
